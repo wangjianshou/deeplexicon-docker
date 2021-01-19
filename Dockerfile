@@ -1,6 +1,6 @@
-#from ubuntu:18.04
+from ubuntu:18.04
 ##from nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
-from nvidia/cuda:11.1-cudnn8-devel-ubuntu18.04
+#from nvidia/cuda:11.1-cudnn8-devel-ubuntu18.04
 RUN apt-get update && \
     apt-get install -y wget git &&\
     wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
