@@ -9,7 +9,6 @@ RUN mkdir -p /opt/miniconda && \
     sh miniconda.sh -bfp /opt/miniconda && \
     rm miniconda.sh && \
     rm -r /opt/miniconda/pkgs && \
-    #echo "export PATH=/opt/conda/bin:$PATH" >> ~/.bashrc &&\
     /bin/bash -c "source /opt/miniconda/bin/activate" && conda init &&\
     conda install python=3.7 && \
     pip install Keras==2.2.4 Pandas PyTs==0.8.0 Scikit-learn numba==0.45.0 TensorFlow==1.13.1 -i https://pypi.doubanio.com/simple &&\
